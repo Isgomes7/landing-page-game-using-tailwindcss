@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.attribution {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    background-image: url(https://avatars.githubusercontent.com/u/106533794?s=400&u=078510c3e3c9adc24bd5f2e8bccb69424a64c5a6&v=44);
+    background-size: 100%;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    z-index: 99;
+}
+
+.attribution p {
+    visibility: hidden;
+    position: fixed;
+    bottom: 4.5rem;
+    right: 5rem;
+    width: 16rem;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem 1rem 0;
+    background-color: var(--dark-blue);
+    font-size: .9rem;
+    z-index: 999;
+    box-shadow: 0 0 0.4rem var(--cyan);
+    transform: rotateY(90deg);
+    transform-origin: right;
+    transition: .8s cubic-bezier(.06, .8, .1, 1);
+    color: white;
+}
+
+.attribution a {
+    color: cyan;
+}
+
+.attribution:hover p {
+    visibility: visible;
+    transform: rotateY(0);
+    background-color: black;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-slide {
+    position: relative;
+    float: left;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    z-index: 10;
+    font-size: 0;
+}
+
+.slick-arrow.slick-prev{
+    background: url('../src/images/slick-arrow-left.png') no-repeat;
+    left: 20px;
+}
+
+.slick-arrow.slick-next{
+    background: url('../src/images/slick-arrow-right.png') no-repeat;
+    right: 20px;
+}
+
+.slick-arrow.slick-disabled{
+    opacity: .3;
+    cursor: not-allowed;
+}
+
+.header .slick-dots{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.header .slick-dots li button{
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    background-color: rgba(239, 239, 239, 0.20);
+}
+
+.header .slick-dots li.slick-active button{
+    background-color: #3B44F6;
+}
+
+.section-06 .slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 51px;
+}
+
+.section-06 .slick-dots li.slick-active button{
+    background-color: #3B44F6;
+}
+
+.section-06 .slick-dots li button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #D8DAFD;
+}
+
+@media (max-width: 768px) {
+    section{
+        padding: 50px 0;
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1200px] m-auto px-trim;
+    }
+
+    .btn-blue {
+        @apply bg-dark-blue-01;
+    }
+
+    .btn-white {
+        @apply bg-transparent border border-solid border-white;
+    }
+    .blue{
+        @apply text-dark-blue-01 font-semibold text-[18px] cursor-pointer duration-300;
+    }
+    .effect{
+        @apply opacity-0 duration-300 ease-out scale-[.9] invisible;
+    }
+    .title-card{
+        @apply text-black-01 font-medium text-[20px];
+    }
+    .blue-card{
+        @apply text-dark-blue-01 font-medium text-[16px];
+    }
+    .red-card{
+        @apply text-red-01 font-medium text-[12px] bg-[rgba(252,_50,_111,_0.20)] rounded-[4px] w-[31px] h-[22px] flex items-center justify-center;
+    }
+    .gray-card{
+        @apply text-gray-01 font-medium text-[14px] line-through bg-[rgba(245,_244,_249,_.5)] rounded-r-[4px] h-[22px] px-gap;
+    }
+    .btn-card{
+        @apply bg-[rgba(59,_68,_246,_.2)] rounded-[4px];
+    }
+    .title-card-02{
+        @apply text-white font-medium text-[28px] drop-shadow-[0px_4px_5px_0px_#000] mb-[32px];
+    }
+    .btn-white{
+        @apply bg-transparent border border-solid border-light-white-01 rounded-[8px];
+    }
+}
+
+@layer base {
+    button {
+        @apply rounded-[8px] duration-300 w-full;
+    }
+
+    h1 {
+        @apply text-white text-[48px] font-semibold;
+    }
+    section{
+        @apply py-[70px] bg-light-white-01;
+    }
+    h2{
+        @apply text-black-01 font-semibold text-[36px];
+    }
+}

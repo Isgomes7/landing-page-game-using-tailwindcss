@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./src/js/slick.min.js"></script>
+    <script src="./src/js/script.js"></script>
+    <title>Landing page Game using tailwindcss</title>
+</head>
+
+<body>
+    <div class="header relative">
+        <div class="header absolute w-full top-0 z-10">
+            <div class="container flex items-center justify-between">
+                <img src="./src/images/logo.png" alt="logo">
+                <ul class="flex items-center gap-x-[45px] max-[768px]:hidden">
+                    <li class="py-gap"><a href="#"
+                            class="text-white-01 font-normal text-[18px] hover:text-white duration-300 py-gap relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:rounded-[30px] after:bg-white after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">Games</a>
+                    </li>
+                    <li class="py-gap flex items-center gap-x-small"><a href="#"
+                            class="text-white-01 font-normal text-[18px] hover:text-white duration-300 py-gap relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:rounded-[30px] after:bg-white after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">Browse</a>
+                        <img src="./src/images/arrow-down.png" alt="arrow-down">
+                    </li>
+                    <li class="py-gap"><a href="#"
+                            class="text-white-01 font-normal text-[18px] hover:text-white duration-300 py-gap relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:rounded-[30px] after:bg-white after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">Store</a>
+                    </li>
+                </ul>
+                <div class="flex justify-between w-full max-w-[200px] max-[768px]:hidden">
+                    <button class="btn-blue max-w-[90px] min-h-[38px] hover:opacity-[.83]"><span
+                            class="text-white font-normal text-[15px]">Sign up</span></button>
+                    <button class="btn-white max-w-[90px] min-h-[38px] hover:opacity-[.83]"><span
+                            class="text-white font-normal text-[15px]">Login</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="has-carousel">
+            <div class="relative">
+                <img src="./src/images/banner.png" alt="banner" class="w-full">
+                <div class="absolute left-[385px] top-[50%] translate-y-[-50%] max-[768px]:hidden">
+                    <h1>MultiVersus</h1>
+                    <p class="text-white font-semibold text-[24px] mt-[17px] mb-[64px] max-w-[400px]">Now officially
+                        free to play for all Xbox users.</p>
+                    <button class="btn-blue max-w-[162px] min-h-[59px] hover:opacity-[.83]"><span
+                            class="text-white font-normal text-[18px]">Get in now!</span></button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./src/images/banner.png" alt="banner" class="w-full">
+                <div class="absolute left-[385px] top-[50%] translate-y-[-50%] max-[768px]:hidden">
+                    <h1>MultiVersus</h1>
+                    <p class="text-white font-semibold text-[24px] mt-[17px] mb-[64px] max-w-[400px]">Now officially
+                        free to play for all Xbox users.</p>
+                    <button class="btn-blue max-w-[162px] min-h-[59px] hover:opacity-[.83]"><span
+                            class="text-white font-normal text-[18px]">Get in now!</span></button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./src/images/banner.png" alt="banner" class="w-full">
+                <div class="absolute left-[385px] top-[50%] translate-y-[-50%] max-[768px]:hidden">
+                    <h1>MultiVersus</h1>
+                    <p class="text-white font-semibold text-[24px] mt-[17px] mb-[64px] max-w-[400px]">Now officially
+                        free to play for all Xbox users.</p>
+                    <button class="btn-blue max-w-[162px] min-h-[59px] hover:opacity-[.83]"><span
+                            class="text-white font-normal text-[18px]">Get in now!</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section-01">
+        <div class="container">
+            <h2 class="text-center">Why eXStore?</h2>
+            <p class="text-black-02 font-normal text-[18px] text-center max-w-[473px] m-auto mt-[16px]">We are the
+                official Xbox partner in Indonesia that provides official video games.</p>
+            <ul class="flex justify-between mt-[60px] max-[768px]:flex-col gap-y-[24px]">
+                <li class="flex items-center flex-col gap-y-[21px] duration-300 cursor-pointer hover:opacity-[.83]">
+                    <img src="./src/images/section-01-img-01.png" alt="img-01">
+                    <p class="text-black-01 font-medium text-[20px] max-w-[250px] text-center">5000+ video games
+                        avaliable</p>
+                </li>
+                <li class="flex items-center flex-col gap-y-[21px] duration-300 cursor-pointer hover:opacity-[.83]">
+                    <img src="./src/images/section-01-img-02.png" alt="img-02">
+                    <p class="text-black-01 font-medium text-[20px] max-w-[250px] text-center">Trusted by 100.000+
+                        customers</p>
+                </li>
+                <li class="flex items-center flex-col gap-y-[21px] duration-300 cursor-pointer hover:opacity-[.83]">
+                    <img src="./src/images/section-01-img-03.png" alt="img-03">
+                    <p class="text-black-01 font-medium text-[20px] max-w-[250px] text-center">Avaliable for all Xbox
+                        consoles</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-02">
+        <div class="container">
+            <div class="flex items-center justify-between max-[768px]:flex-col max-[768px]:text-center">
+                <h2>Games Genres</h2>
+                <p class="blue hover:opacity-[.83]">See all genres</p>
+            </div>
+            <div class="flex justify-between mt-[24px] gap-x-[16px] max-[768px]:flex-col max-[768px]:gap-y-[24px]">
+                <div class="relative group cursor-pointer">
+                    <img src="./src/images/section-02-img-01.png" alt="img-01" class="rounded-[8px] w-full">
+                    <p
+                        class="effect text-light-white-01 font-medium text-[20px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:visible group-hover:opacity-100 group-hover:scale-[1]">
+                        Strategy</p>
+                </div>
+                <div class="relative group cursor-pointer">
+                    <img src="./src/images/section-02-img-02.png" alt="img-02" class="rounded-[8px] w-full">
+                    <p
+                        class="effect text-light-white-01 font-medium text-[20px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:visible group-hover:opacity-100 group-hover:scale-[1]">
+                        FPS</p>
+                </div>
+                <div class="relative group cursor-pointer">
+                    <img src="./src/images/section-02-img-03.png" alt="img-03" class="rounded-[8px] w-full">
+                    <p
+                        class="effect text-light-white-01 font-medium text-[20px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:visible group-hover:opacity-100 group-hover:scale-[1]">
+                        RPG</p>
+                </div>
+                <div class="relative group cursor-pointer">
+                    <img src="./src/images/section-02-img-04.png" alt="img-04" class="rounded-[8px] w-full">
+                    <p
+                        class="effect text-light-white-01 font-medium text-[20px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:visible group-hover:opacity-100 group-hover:scale-[1]">
+                        Puzzle</p>
+                </div>
+                <div class="relative group cursor-pointer">
+                    <img src="./src/images/section-02-img-05.png" alt="img-05" class="rounded-[8px] w-full">
+                    <p
+                        class="effect text-light-white-01 font-medium text-[20px] whitespace-nowrap absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:visible group-hover:opacity-100 group-hover:scale-[1]">
+                        Role Playing</p>
+                </div>
+                <div class="relative group cursor-pointer">
+                    <img src="./src/images/section-02-img-06.png" alt="img-06" class="rounded-[8px] w-full">
+                    <p
+                        class="effect text-light-white-01 font-medium text-[20px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:visible group-hover:opacity-100 group-hover:scale-[1]">
+                        Sports</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-03">
+        <div class="container">
+            <h2 class="max-[768px]:text-center">Best Seller Games</h2>
+            <div class="grid grid-cols-4 gap-x-[16px] mt-trim max-[768px]:grid-cols-1 gap-y-[24px]">
+                <div
+                    class="bg-white border-solid border-[.3px] border-[#D1D1D1] rounded-[8px] shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] p-[16px] duration-300 cursor-pointer hover:opacity-[.83]">
+                    <img src="./src/images/section-03-img-01.png" alt="img-01" class="w-full">
+                    <div>
+                        <p class="title-card mt-trim-small mb-[17px]">Minecraft</p>
+                        <div class="flex justify-between">
+                            <p class="blue-card">Rp 260.000</p>
+                            <div class="flex border-[.5px] border-solid border-[#F0F0F0] rounded-[4px]">
+                                <p class="red-card">90%</p>
+                                <p class="gray-card">Rp 260.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border-solid border-[.3px] border-[#D1D1D1] rounded-[8px] shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] p-[16px] duration-300 cursor-pointer hover:opacity-[.83]">
+                    <img src="./src/images/section-03-img-02.png" alt="img-02" class="w-full">
+                    <div>
+                        <p class="title-card mt-trim-small mb-[17px]">Asphalt 9: Legends</p>
+                        <button class="btn-card max-w-[127px] hover:opacity-[.83]"><span
+                                class="text-dark-blue-01 font-medium text-[16px] flex justify-center">Free
+                                Download</span></button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border-solid border-[.3px] border-[#D1D1D1] rounded-[8px] shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] p-[16px] duration-300 cursor-pointer hover:opacity-[.83]">
+                    <img src="./src/images/section-03-img-03.png" alt="img-03" class="w-full">
+                    <div>
+                        <p class="title-card mt-trim-small mb-[17px]">The Witcher 3</p>
+                        <div class="flex justify-between">
+                            <p class="blue-card">Rp 420.000</p>
+                            <div class="flex border-[.5px] border-solid border-[#F0F0F0] rounded-[4px]">
+                                <p class="red-card">25%</p>
+                                <p class="gray-card">Rp 590.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border-solid border-[.3px] border-[#D1D1D1] rounded-[8px] shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] p-[16px] duration-300 cursor-pointer hover:opacity-[.83]">
+                    <img src="./src/images/section-03-img-04.png" alt="img-04" class="w-full">
+                    <div>
+                        <p class="title-card mt-trim-small mb-[17px]">Surving Mars</p>
+                        <p class="blue-card">Rp 440.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-04">
+        <div class="container">
+            <div class="flex justify-between max-[768px]:items-center max-[768px]:flex-col max-[768px]:mb-[24px]">
+                <h2>Popular Games</h2>
+                <p class="blue">Browse all games</p>
+            </div>
+            <div class="grid grid-cols-[auto_auto_auto_auto] justify-between gap-y-[24px] max-[768px]:grid-cols-1">
+                <div
+                    class="bg-white border-solid border-[.3px] border-[#D1D1D1] rounded-[8px] shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] p-[16px] duration-300 cursor-pointer max-w-[262px] hover:opacity-[.83] max-[768px]:max-w-full">
+                    <img src="./src/images/section-04-img-01.png" alt="img-01" class="w-full">
+                    <div>
+                        <p class="title-card mt-trim-small mb-[17px]">GTA V</p>
+                        <div class="flex justify-between">
+                            <p class="blue-card">Rp 354.000</p>
+                            <div class="flex border-[.5px] border-solid border-[#F0F0F0] rounded-[4px]">
+                                <p class="red-card">40%</p>
+                                <p class="gray-card">Rp 590.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border-solid border-[.3px] border-[#D1D1D1] rounded-[8px] shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] p-[16px] duration-300 cursor-pointer max-w-[262px] hover:opacity-[.83] max-[768px]:max-w-full">
+                    <img src="./src/images/section-04-img-02.png" alt="img-02" class="w-full">
+                    <div>
+                        <p class="title-card mt-trim-small mb-[17px]">ROBLOX</p>
+                        <button class="btn-card max-w-[127px] hover:opacity-[.83]"><span
+                                class="text-dark-blue-01 font-medium text-[16px] flex justify-center">Free
+                                Download</span></button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border-solid border-[.3px] border-[#D1D1D1] rounded-[8px] shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] p-[16px] duration-300 cursor-pointer max-w-[262px] hover:opacity-[.83] max-[768px]:max-w-full">
+                    <img src="./src/images/section-04-img-03.png" alt="img-03" class="w-full">
+                    <div>
+                        <p class="title-card mt-trim-small mb-[17px]">NBA 2K22</p>
+                        <div class="flex justify-between">
+                            <p class="blue-card">Rp 297.000</p>
+                            <div class="flex border-[.5px] border-solid border-[#F0F0F0] rounded-[4px]">
+                                <p class="red-card">70%</p>
+                                <p class="gray-card">Rp 990.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border-solid border-[.3px] border-[#D1D1D1] rounded-[8px] shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] p-[16px] duration-300 cursor-pointer max-w-[262px] hover:opacity-[.83] max-[768px]:max-w-full">
+                    <img src="./src/images/section-04-img-04.png" alt="img-04" class="w-full">
+                    <div>
+                        <p class="title-card mt-trim-small mb-[17px]">Dead by Daylight</p>
+                        <div class="flex justify-between">
+                            <p class="blue-card">Rp 214.500</p>
+                            <div class="flex border-[.5px] border-solid border-[#F0F0F0] rounded-[4px]">
+                                <p class="red-card">50%</p>
+                                <p class="gray-card">Rp 429.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border-solid border-[.3px] border-[#D1D1D1] rounded-[8px] shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] p-[16px] duration-300 cursor-pointer max-w-[262px] hover:opacity-[.83] max-[768px]:max-w-full">
+                    <img src="./src/images/section-04-img-05.png" alt="img-05" class="w-full">
+                    <div>
+                        <p class="title-card mt-trim-small mb-[17px]">ARK: Survival Evolved</p>
+                        <p class="blue-card">Rp 430.000</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border-solid border-[.3px] border-[#D1D1D1] rounded-[8px] shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] p-[16px] duration-300 cursor-pointer max-w-[262px] hover:opacity-[.83] max-[768px]:max-w-full">
+                    <img src="./src/images/section-04-img-06.png" alt="img-06" class="w-full">
+                    <div>
+                        <p class="title-card mt-trim-small mb-[17px]">Rocket League</p>
+                        <button class="btn-card max-w-[127px] hover:opacity-[.83]"><span
+                                class="text-dark-blue-01 font-medium text-[16px] flex justify-center">Free
+                                Download</span></button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border-solid border-[.3px] border-[#D1D1D1] rounded-[8px] shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] p-[16px] duration-300 cursor-pointer max-w-[262px] hover:opacity-[.83] max-[768px]:max-w-full">
+                    <img src="./src/images/section-04-img-07.png" alt="img-07" class="w-full">
+                    <div>
+                        <p class="title-card mt-trim-small mb-[17px]">Forza Horizon 5</p>
+                        <div class="flex justify-between">
+                            <p class="blue-card">Rp 356.000</p>
+                            <div class="flex border-[.5px] border-solid border-[#F0F0F0] rounded-[4px]">
+                                <p class="red-card">60%</p>
+                                <p class="gray-card">Rp 890.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border-solid border-[.3px] border-[#D1D1D1] rounded-[8px] shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] p-[16px] duration-300 cursor-pointer max-w-[262px] hover:opacity-[.83] max-[768px]:max-w-full">
+                    <img src="./src/images/section-04-img-08.png" alt="img-08" class="w-full">
+                    <div>
+                        <p class="title-card mt-trim-small mb-[17px]">Cities: Skylines</p>
+                        <p class="blue-card">Rp 590.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-05 bg-black-04">
+        <div class="container">
+            <h2 class="text-light-white-01">Coming Soon</h2>
+            <div class="flex justify-between mt-[24px] max-[768px]:flex-col max-[768px]:gap-y-[16px]">
+                <div class="flex flex-col gap-y-[16px]">
+                    <div class="relative cursor-pointer group">
+                        <img src="./src/images/section-05-img-01.png" alt="img-01">
+                        <div
+                            class="absolute bottom-[40px] left-[36px] w-full effect group-hover:visible group-hover:opacity-100 group-hover:scale-[1]">
+                            <p class="title-card-02 max-w-[342px]">Call of Duty®: Modern Warfare® II</p>
+                            <button class="btn-white max-w-[144px] min-h-[40px] hover:opacity-[.83]"><span
+                                    class="text-light-white-01 font-semibold text-[15px]">Pre-order now!</span></button>
+                        </div>
+                    </div>
+                    <div class="relative cursor-pointer group">
+                        <img src="./src/images/section-05-img-05.png" alt="img-05">
+                        <div
+                            class="absolute bottom-[40px] left-[36px] w-full effect group-hover:visible group-hover:opacity-100 group-hover:scale-[1]">
+                            <p class="title-card-02 max-w-[342px]">NBA 2K2</p>
+                            <button class="btn-white max-w-[144px] min-h-[40px] hover:opacity-[.83]"><span
+                                    class="text-light-white-01 font-semibold text-[15px]">Pre-order now!</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-y-[16px]">
+                    <div class="relative cursor-pointer group">
+                        <img src="./src/images/section-05-img-02.png" alt="img-02">
+                        <div
+                            class="absolute bottom-[40px] left-[36px] w-full effect group-hover:visible group-hover:opacity-100 group-hover:scale-[1]">
+                            <p class="title-card-02 max-w-[217px]">EA SPORTS™ FIFA 23</p>
+                            <button class="btn-white max-w-[144px] min-h-[40px] hover:opacity-[.83]"><span
+                                    class="text-light-white-01 font-semibold text-[15px]">Pre-order now!</span></button>
+                        </div>
+                    </div>
+                    <div class="relative cursor-pointer group">
+                        <img src="./src/images/section-05-img-03.png" alt="img-03">
+                        <div
+                            class="absolute bottom-[40px] left-[36px] w-full effect group-hover:visible group-hover:opacity-100 group-hover:scale-[1]">
+                            <p class="title-card-02 max-w-[217px]">Resident Evil 4 - Remake</p>
+                            <button class="btn-white max-w-[144px] min-h-[40px] hover:opacity-[.83]"><span
+                                    class="text-light-white-01 font-semibold text-[15px]">Pre-order now!</span></button>
+                        </div>
+                    </div>
+                    <div class="relative cursor-pointer group">
+                        <img src="./src/images/section-05-img-04.png" alt="img-04">
+                        <div
+                            class="absolute bottom-[40px] left-[36px] w-full effect group-hover:visible group-hover:opacity-100 group-hover:scale-[1]">
+                            <p class="title-card-02 max-w-[217px]">Alien - Dark Descent</p>
+                            <button class="btn-white max-w-[144px] min-h-[40px] hover:opacity-[.83]"><span
+                                    class="text-light-white-01 font-semibold text-[15px]">Pre-order now!</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-06 relative">
+        <div class="container">
+            <h2 class="text-center">12.000+ games satisfied</h2>
+            <p class="text-black-02 font-normal text-[18px] max-w-[473px] m-auto text-center mt-[16px] mb-[51px]">Let's
+                hear what our customers have to say
+                about their satisfaction with our services and products.</p>
+            <div class="has-carousel-02">
+                <div
+                    class="bg-white shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] rounded-[6px] flex flex-col items-center gap-y-trim-small py-[32px] px-[24px] mt-gap mx-trim-small">
+                    <img src="./src/images/testimonial-01.png" alt="testimonial-01">
+                    <p class="text-black-01 font-medium text-[20px]">Jacob Jones</p>
+                    <div class="flex gap-x-small">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star-empty.png" alt="star-empty">
+                    </div>
+                    <p class="text-black-02 font-normal text-[14px] max-w-[260px] text-center">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Sed vel leo vitae vestibulum porta.</p>
+                </div>
+                <div
+                    class="bg-white shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] rounded-[6px] flex flex-col items-center gap-y-trim-small py-[32px] px-[24px] mx-trim-small">
+                    <img src="./src/images/testimonial-02.png" alt="testimonial-02">
+                    <p class="text-black-01 font-medium text-[20px]">Cameron Williamson</p>
+                    <div class="flex gap-x-small">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                    </div>
+                    <p class="text-black-02 font-normal text-[14px] max-w-[260px] text-center">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Sed vel leo vitae vestibulum porta.</p>
+                </div>
+                <div
+                    class="bg-white shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] rounded-[6px] flex flex-col items-center gap-y-trim-small py-[32px] px-[24px] mt-gap mx-trim-small">
+                    <img src="./src/images/testimonial-03.png" alt="testimonial-03">
+                    <p class="text-black-01 font-medium text-[20px]">Kristin Watson</p>
+                    <div class="flex gap-x-small">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star-empty.png" alt="star-empty">
+                    </div>
+                    <p class="text-black-02 font-normal text-[14px] max-w-[260px] text-center">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Sed vel leo vitae vestibulum porta.</p>
+                </div>
+                <div
+                    class="bg-white shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] rounded-[6px] flex flex-col items-center gap-y-trim-small py-[32px] px-[24px] mt-gap mx-trim-small">
+                    <img src="./src/images/testimonial-01.png" alt="testimonial-01">
+                    <p class="text-black-01 font-medium text-[20px]">Jacob Jones</p>
+                    <div class="flex gap-x-small">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star-empty.png" alt="star-empty">
+                    </div>
+                    <p class="text-black-02 font-normal text-[14px] max-w-[260px] text-center">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Sed vel leo vitae vestibulum porta.</p>
+                </div>
+                <div
+                    class="bg-white shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] rounded-[6px] flex flex-col items-center gap-y-trim-small py-[32px] px-[24px] mx-trim-small">
+                    <img src="./src/images/testimonial-02.png" alt="testimonial-02">
+                    <p class="text-black-01 font-medium text-[20px]">Cameron Williamson</p>
+                    <div class="flex gap-x-small">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                    </div>
+                    <p class="text-black-02 font-normal text-[14px] max-w-[260px] text-center">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Sed vel leo vitae vestibulum porta.</p>
+                </div>
+                <div
+                    class="bg-white shadow-[0px_8px_10px_0px_rgba(164,_164,_164,_0.07)] rounded-[6px] flex flex-col items-center gap-y-trim-small py-[32px] px-[24px] mt-gap mx-trim-small">
+                    <img src="./src/images/testimonial-03.png" alt="testimonial-03">
+                    <p class="text-black-01 font-medium text-[20px]">Kristin Watson</p>
+                    <div class="flex gap-x-small">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star.png" alt="star">
+                        <img src="./src/images/star-empty.png" alt="star-empty">
+                    </div>
+                    <p class="text-black-02 font-normal text-[14px] max-w-[260px] text-center">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Sed vel leo vitae vestibulum porta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black-04">
+        <div class="container flex justify-between items-start pt-big max-[768px]:items-start max-[768px]:flex-col max-[768px]:gap-y-trim">
+            <img src="./src/images/logo.png" alt="logo">
+            <div>
+                <p class="text-light-white-01 font-semibold text-[18px] mb-[24px]">Menu</p>
+                <ul class="flex flex-col gap-y-[16px]">
+                    <li class="text-light-white-02 font-normal text-[16px] cursor-pointer duration-300 hover:opacity-[.83]">Order tracking</li>
+                    <li class="text-light-white-02 font-normal text-[16px] cursor-pointer duration-300 hover:opacity-[.83]">Store location</li>
+                    <li class="text-light-white-02 font-normal text-[16px] cursor-pointer duration-300 hover:opacity-[.83]">Return policy</li>
+                    <li class="text-light-white-02 font-normal text-[16px] cursor-pointer duration-300 hover:opacity-[.83]">Support</li>
+                </ul>
+            </div>
+            <div>
+                <p class="text-light-white-01 font-semibold text-[18px] mb-[24px]">Resources</p>
+                <ul class="flex flex-col gap-y-[16px]">
+                    <li class="text-light-white-02 font-normal text-[16px] cursor-pointer duration-300 hover:opacity-[.83]">Blog</li>
+                    <li class="text-light-white-02 font-normal text-[16px] cursor-pointer duration-300 hover:opacity-[.83]">Help center</li>
+                    <li class="text-light-white-02 font-normal text-[16px] cursor-pointer duration-300 hover:opacity-[.83]">Documentation</li>
+                    <li class="text-light-white-02 font-normal text-[16px] cursor-pointer duration-300 hover:opacity-[.83]">Guidelines</li>
+                </ul>
+            </div>
+            <div>
+                <p class="text-light-white-01 font-semibold text-[18px] mb-[24px]">Follow us on:</p>
+                <ul class="flex gap-x-[12px]">
+                    <li class="cursor-pointer duration-300 hover:opacity-[.83]"><img src="./src/images/instagram.svg" alt="instagram"></li>
+                    <li class="cursor-pointer duration-300 hover:opacity-[.83]"><img src="./src/images/youtube.svg" alt="youtube"></li>
+                    <li class="cursor-pointer duration-300 hover:opacity-[.83]"><img src="./src/images/twitch.svg" alt="twitch"></li>
+                    <li class="cursor-pointer duration-300 hover:opacity-[.83]"><img src="./src/images/twitter.svg" alt="twitter"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container border-t border-solid border-[rgba(255,_255,_255,_0.04)] mt-[65px]">
+            <p class="text-light-white-02 font-normal text-[15px] text-center py-[22px]">© 2022 Exstore</p>
+        </div>
+    </footer>
+    <div class="attribution">
+        <p>
+            Coded by <a href="https://github.com/Isgomes7" title="Isgomes7">ISGOMES7</a> 👻.
+        </p>
+    </div>
+</body>
+
+</html>
